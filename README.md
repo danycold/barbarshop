@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-This is train project from [htmlacademy.ru](https://htmlacademy.ru).
+This is train project from [htmlacademy.ru](https://htmlacademy.ru)
 
 ## Code Example
 
