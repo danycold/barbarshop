@@ -37,25 +37,44 @@
     
     <main class="shop-content">
       
-      <form class="item-group" action="#" method="get">
-        <fieldset class="manufacture-item-group">
-          <label>
-            <h2>Производители:</h2>
-            <input type="checkbox" name="Baxter of California">
-            <input type="checkbox" name="Mr Natty">
-            <input type="checkbox" name="Suavecito">
-            <input type="checkbox" name="Malin+Goetz">
-            <input type="checkbox" name="Murray’s">
-            <input type="checkbox" name="American Crew">
+      <form class="filer" action="#" method="get" name="filter">
+        <fieldset class="manufacturers">
+          <legend>Производители:</legend>
+          <label for="baxter-of-california">
+            Baxter of California
+            <input type="checkbox" name="baxter-of-california" value="baxter-of-california" checked>
           </label>
-          <label>
-            <h2>Группы товаров:</h2>
-            <input type="radio" name="Бритвенные принадлежности">
-            <input type="radio" name="Средства для ухода">
-            <input type="radio" name="Аксессуары">
+          <label for="baxter-of-california">
+            Mr Natty
+            <input type="checkbox" name="mr-natty" value="mr-natty" checked>
           </label>
+          <!-- Variants -->
+          <input type="checkbox" name="suavecito" id="suavecito" value="suavecito" checked>
+          <label for="suavecito">Suavecito</label>
+          <input type="checkbox" name="malin+goetz" id="malin+goetz" value="malin+goetz">
+          <label for="malin+goetz">Malin+Goetz</label>
+          <input type="checkbox" name="murrays" id="murrays" value="murrays">
+          <label for="murrays">Murray's</label>
+          <input type="checkbox" name="american-crew" id="american-crew" value="american-crew" checked>
+          <label for="american-crew">American Crew</label>
         </fieldset>
+        <fieldset>
+          
+          <label>
+            Бритвенные принадлежности
+            <input type="radio" name="item-group" value="razors">
+          </label>
+          
+          <input type="radio" name="item-group" id="care-products" value="care-products" checked>
+          <label for="care-products">Средства для ухода</label>
+          <input type="radio" name="item-group" id="accessories" value="accessories">
+          <label for="accessories">Аксессуары</label>
+        </fieldset>
+        
         <input class="btn-show btn-default" type="submit" name="submit" value="Показать">
+        <!--
+        <button type="submit" class="btn">Показать</button>
+        -->
       </form>
       
       <section class="item-section">
